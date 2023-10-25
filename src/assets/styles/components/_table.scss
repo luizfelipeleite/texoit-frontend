@@ -1,0 +1,56 @@
+@mixin alternating-rows {
+  tr:nth-child(even) {
+    background-color: $lightGray;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    background-color: $lightGray;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid $gray;
+  }
+
+  @include alternating-rows;
+
+  td {
+    padding: 8px;
+    border: 1px solid $gray;
+  }
+}
+
+.pagination {
+  background-color: $lightGray;
+  padding: 8px;
+  text-align: center;
+
+  button {
+    margin: 0 5px;
+    border: 0;
+    vertical-align: middle;
+
+    &[disabled] {
+      img {
+        filter: contrast(0.1);
+      }
+    }
+
+    &.active-page {
+      background-color: blue;
+      color: white;
+      padding: 3px 7px;
+      border-radius: 5px;
+    }
+
+    .pagination-icon {
+      width: 10px;
+      height: 16px;
+      margin-top: 3px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Estilos para o container principal
+.app-container {
+  display: grid;
+  grid-template-columns: 20% 1fr; // Menu à esquerda, conteúdo à direita
+  grid-template-rows: 100%; // Altura de 100% da tela
+  min-height: 100vh;
+}
+
+// Estilos para o menu à esquerda
+.menu {
+  background-color: $lightGray; // Cor de fundo light gray
+  padding: 20px; // Espaçamento interno
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

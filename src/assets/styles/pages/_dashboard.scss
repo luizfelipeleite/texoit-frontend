@@ -1,0 +1,45 @@
+.dashboard-container {
+  padding: 25px;
+
+  @media (min-width: 1024px) {
+    padding: 50px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item {
+      padding: 20px;
+      border: 1px solid $gray;
+      border-radius: 5px;
+
+      .search-year {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        input {
+          width: 100%;
+          border-radius: 5px;
+          height: 25px;
+        }
+
+        .magnifying-glass {
+          display: inline-block;
+          margin-left: 10px;
+          width: 15px;
+          height: 15px;
+          background: blue;
+          padding: 8px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

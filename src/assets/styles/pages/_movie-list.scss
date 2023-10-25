@@ -1,0 +1,30 @@
+.movie-list-container {
+  padding: 15px 25px 25px;
+
+  @media (min-width: 1024px) {
+    padding: 15px 50px 50px;
+  }
+
+  table {
+    th {
+      background-color: $lightGray;
+      font-weight: bold;
+      text-align: left;
+      padding: 8px;
+      border: 1px solid $gray;
+      text-align: center;
+
+      input,
+      select {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        border: $gray;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
